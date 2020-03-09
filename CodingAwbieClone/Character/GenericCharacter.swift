@@ -18,10 +18,10 @@ public enum ActionState {
 }
 
 class GenericCharacter: SCNNode {
-    var animations: [String: SCNAnimation]
+    var animations: [String: SCNAnimation] = [:]
     
     public init(withNode node: SCNNode) {
-        
+        super.init()
     }
     
     required init?(coder: NSCoder) {
